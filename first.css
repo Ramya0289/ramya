@@ -1,0 +1,10 @@
+
+table{width: 50%}
+
+table,th,td{border:1px solid black;
+	border-collapse: collapse;
+text-align: center;}
+th{background-color: #D0FA58;}
+#one{background-color: black;color: white;
+width: 50%;}
+p.two{background-color: black;color:white;width:70%; }
