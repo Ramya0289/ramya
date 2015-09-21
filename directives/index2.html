@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html ng-app="app">
+<head>
+
+<style type="text/css" src = "bootstrap.min.css"></style>
+<script src = "jquery.min.js"></script>
+<script src = "angular.min.js"></script>
+<script src = "bootstrap.min.js"></script>
+<script src = "script.js"></script>
+
+</head>
+<body ng-controller="mainCtrl" class = "container">
+<video id = "vid" spacebar-support eventPause = "handlePause(evt)" controls preload = "none" poster = "">
+	<source src = " " type =""></source>
+</video>
+<div ng-repeat="message in messages">{{message.text}}</div>
+
+
+
+</body>
+</html>
+
+<!-- key press events work only on body and input types -->

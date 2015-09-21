@@ -1,0 +1,71 @@
+<Notes for  jQuery Tips
+
+
+Event Handling:
+ in chrome dev tools use $0 to get DOM element that is actually selected 
+ use jQuery._data($0 , "events") (we get array of click eventhandlers by using this)
+
+
+ Event bubbling or propagation is the process by which events can be delegated to child elements
+
+ Three parameter "on" event handler can add events to elements created dynamically
+
+ $("selector").on("click","#selector li a", function(){}) if the selector is ul : the parent now when we click on dynamic a event will work we can also use buuton[type='submit'] 
+
+ we can use jQuery debugger on google chrome
+
+ stop bubbling up the DOM tree use :
+
+ on ("click",function(e){e.preventPropogatio()})>
+
+ <using names spaces
+
+ on("focus.myplugin") myplugin is namespace if we want to off the event just call  " .namespace"
+
+ to run some code before DOM is ready use
+
+ $(document).ready will wait till DOM and $(document).on for events when Dom is not ready
+
+ focus and blur are events that dont propagate dom so when you use three click event we will have errors so use propagated versions like focusin and focusout
+
+ use $.proxy to set value of (this) we used the functionality when event handlers return undefined because the have selected the DOM for clicking now instead they will select the value of DOM
+ found this code interesting
+ function render ($output){
+ $("<code></code>",{
+ html:
+ click:this.clicked.bind(this)
+ })}  where clicked ia another method>
+
+
+ <we can use .trigger("type",[data]) for custome events
+
+
+ to determine user input like what key
+ on(functiom(e){console.log(e.which)})
+
+
+ use e.originalEvent?user:computer to find if event is triggered by user or computer
+
+ just in time initialization will initialize only if you need that  before DOM is ready use"not" to make sure that particular dom is ready if not send a msg like initialing and intiliaze it= focus on document and (input .date:not datepicker) if input has date but not date picker then initialize it
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+var volcana = _.extend({,Backbone.Events}):
+
+volcano.on('disaster:eruption' function(options){
+	''+options.plan
+});
+
+volcano.trigger('disaster:eruption',plan:'run
+
+
+//isNew is used to determine if the model is saved to server
+
+var Vehicle = Backbone.Model .extend({
+	
+	defaults:{
+	'color':'red',
+	}
+});
+var Vehicle = Backbone.Model .extend({
+validate :function(attrs){
+var validColors = ['white','yellow'];	
+var colorIsValid = function(attrs){
+	if(!attrs.color)
+	return true;
+	return _(validColors).include(attrs.color);
+}
+if(!validColors(attrs)){'color must be one of these' +validColors.join("'") }
+};
+});
+
+// creating view
+ var V = Backbone.View.({
+
+ tagName:'li',
+ id:'thing',
+ className:'active',
+ attributes:{'data-value':12345}
+ })
+
+ $('body').prepend(V.el);   OR  var v = new V({el:'#test'})
+ v.$el.css();
