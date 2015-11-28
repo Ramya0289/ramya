@@ -1,0 +1,155 @@
+ <!DOCTYPE html>
+<!-- <html>
+	<head>
+		<title> JQ</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+				
+				 <script>
+				 window.jQuery || document.write ("<script src= ></script>")
+				 </script>  
+				
+		<script>
+				 $(document).ready(function(){
+					 $("#content").html("script loaded");
+				});
+		</script>
+		
+	</head>
+
+	<body>
+	
+		<div id = "content"> </div>
+		<div id = "emailContainer">
+			<div class="panel"></div>
+			<div class="panel"></div>
+		</div>
+		<div id = "ordersContainer">
+			<div class="panel"></div>
+			<div class="panel"></div>
+		</div>
+
+	</body>
+</html> -->
+
+
+<!-- - -->
+
+
+
+<!-- <html>
+	<head>
+		<title> JQ</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script>
+		$.extend($.expr[":"],{
+			hiddenPanel:function(pln){
+				if(pln === null) return false;
+				var $pln = $(pln);
+				return $pln.css("visibility") == "hidden" || $pln.css("display") == "none" || $pln.hasClass("hidden");
+			}
+		});
+
+		$(document).ready(function(){
+			$("#showPanelsButton").click (function(){
+             $("div:hiddenPanel")
+             .removeClass("hidden")
+             .css({ "visibility" :"", "display" :"" });
+
+			});
+
+		});
+		
+
+		</script>
+				
+				
+		
+	</head>
+
+	<body>
+	<button id = "showPanelsButton">Click</button>
+	
+		<div class="panel hidden">Panel 1</div>
+		<div class="panel" style="visibility:hidden">Panel 2</div>
+		<div class="panel" style="display:none">Panel 3</div>
+		<div class="panel" >Panel 4</div>
+
+	</body>
+</html> --> 
+<!-- <html>
+	<head>
+		<title> JQ</title>
+		<style type="text/css">
+        .panel{
+        	background-color: red ;
+        	border-style:solid;}
+        .hover{
+        	background-color: yellow ;}
+
+
+		</style>
+			
+		
+	</head>
+
+	<body>
+    <div id="container">
+	
+		<div>Panel 1</div>
+		<div>Panel 2</div>
+		<div>Panel 3</div>
+		<div >Panel 4</div>
+	</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script>
+		$("#container div")
+		.addClass("panel")
+		.hover(function(){
+			$(this).toggleClass("hover");
+		})
+		</script>
+
+	</body>
+</html> -->
+
+
+<html>
+	<head>
+		<title> JQ</title>
+		<style type="text/css">
+        .panel{
+        	background-color: red ;
+        	border-style:solid;}
+        .hover{
+        	background-color: yellow ;}
+
+
+		</style>
+			
+		
+	</head>
+
+	<body>
+    <div id="container">
+	
+		<div>Panel 1</div>
+		<div>Panel 2</div>
+		<div>Panel 3</div>
+		<div >Panel 4</div>
+	</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script>
+		$("#container div")
+		.addClass("panel")
+		.hover(function(){
+			$(this).toggleClass("hover");
+		})
+		</script>
+
+	</body>
+</html>
+
+
+//$(input).on("focus.glow(namespace) blur" function (e){
+	//$(this).toggleClass("glowing" e.type == "focus")
+//})
